@@ -2,9 +2,17 @@
 
 // MARK: vars
 
+@font-face {
+  font-family: "Gotham";
+  src: local("Gotham"),
+    url("../fonts/Gotham-Bold.ttf") format("ttf");
+  font-weight: 700;
+}
+
 // font
 $text-main: "Roboto Condensed", sans-serif;
 $text-accent: "Montserrat", sans-serif;
+$text-secondary: "Gotham", sans-serif;
 
 // font config
 $fw-regular: 400;
@@ -296,6 +304,7 @@ $transition: all 0.3s ease-in-out;
     background-color: $color-bg;
 
     &__title {
+      font-family: $text-secondary;
       padding-top: 25px;
       padding-bottom: 25px;
       text-align: center;
@@ -365,6 +374,7 @@ $transition: all 0.3s ease-in-out;
       &__single-title {
         min-width: 202px;
         font-size: 12px;
+        font-family: $text-secondary;
       }
 
       &__title {
@@ -377,14 +387,12 @@ $transition: all 0.3s ease-in-out;
     @media (min-width: $media-breakpoint-lg) {
       .es-product-colors {
         &__title {
-          font-size: 30px;
-          letter-spacing: 0.6px;
+          font-size: 25px;
         }
 
         &__single-title {
-          font-size: 16px;
-          letter-spacing: 0.2px;
-          padding: 8px 5px;
+          font-size: 14px;
+          padding: 4px 5px;
         }
 
         &__container {
@@ -399,7 +407,7 @@ $transition: all 0.3s ease-in-out;
         }
 
         &__single-product-img {
-          right: -116px;
+          right: -124px;
           bottom: -20px;
           height: 156px;
           min-width: 61px;

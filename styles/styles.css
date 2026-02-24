@@ -1,3 +1,8 @@
+@font-face {
+  font-family: "Gotham";
+  src: local("Gotham"), url("../fonts/Gotham-Bold.ttf") format("ttf");
+  font-weight: 700;
+}
 #es-rc #es-rc-content *,
 #es-rc #es-rc-content *::before,
 #es-rc #es-rc-content *::after {
@@ -189,6 +194,7 @@
   background-color: #ffffff;
 }
 #es-rc #es-rc-content .es-product-colors__title {
+  font-family: "Gotham", sans-serif;
   padding-top: 25px;
   padding-bottom: 25px;
   text-align: center;
@@ -251,6 +257,7 @@
   #es-rc #es-rc-content .es-product-colors__single-title {
     min-width: 202px;
     font-size: 12px;
+    font-family: "Gotham", sans-serif;
   }
   #es-rc #es-rc-content .es-product-colors__title {
     padding-top: 10px;
@@ -260,13 +267,11 @@
 }
 @media (min-width: 992px) {
   #es-rc #es-rc-content .es-product-colors .es-product-colors__title {
-    font-size: 30px;
-    letter-spacing: 0.6px;
+    font-size: 25px;
   }
   #es-rc #es-rc-content .es-product-colors .es-product-colors__single-title {
-    font-size: 16px;
-    letter-spacing: 0.2px;
-    padding: 8px 5px;
+    font-size: 14px;
+    padding: 4px 5px;
   }
   #es-rc #es-rc-content .es-product-colors .es-product-colors__container {
     -moz-column-gap: 0;
@@ -279,7 +284,7 @@
     bottom: 5%;
   }
   #es-rc #es-rc-content .es-product-colors .es-product-colors__single-product-img {
-    right: -116px;
+    right: -124px;
     bottom: -20px;
     height: 156px;
     min-width: 61px;
